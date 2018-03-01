@@ -1,0 +1,286 @@
+﻿@font-face {
+  font-family: 'MyFont';
+  src: 
+       url('armalite_rifle-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('armalite_rifle-webfont.woff') format('woff') /* Pretty Modern Browsers */
+}
+
+h3 {
+    color: darkgoldenrod;
+    text-align: center;
+    font-family: 'MyFont';
+    font-size: 30px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+
+ body {
+    padding: 0px;
+    margin: 0px;
+    font-family:  Arial, Helvetica, sans-serif;
+    background-image: url("ova.jpg");
+    background-position-x: -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height:100%;
+    display:table;
+}
+
+#nav {
+    margin-bottom: 70px;
+    display:table-row;
+    height:20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    z-index: 9;
+    position: fixed;
+    overflow: hidden;
+    background-color: #333333;
+    list-style-type: none;
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    margin: 0px;
+    padding: 0px 9px;
+    text-decoration: none;
+    color: grey;
+
+}
+
+li a#active {
+    font-size: 18px;
+}
+
+li a#active, li a#home {
+    background-color: #333333;
+    color: white;
+}
+
+ul li a:hover:not(#active) {
+    background-color: lightslategray;
+    color: white;
+
+}
+
+span {
+    color: white;
+    padding:0px 10px;
+    font-weight: bold;
+    margin-left:10px;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    background-color: darkorange;
+}
+
+#content {
+    width: 100%;
+    display:table;
+    margin: auto;
+    height:100%;
+}
+.sidebar{display:table-cell;width:100px;}
+.main{display:table-cell;}
+
+
+h5 {
+    text-align: left;
+    margin: 0px;
+   
+    font-size:20px;
+    color: darkgoldenrod;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+
+.card {
+    width: 30%;
+    margin-bottom: 3px;
+    text-align: center;
+    font-size: 50px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#footer {
+    display:table-row;
+    height:20px;
+    z-index:-1;
+    text-align: center;
+    background-color: black;
+    color: grey;
+    font-size: 18px;
+    
+}
+
+.tbl {
+    display: none;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+    height:30px;
+  
+    position: absolute;
+    background-color: white;
+    border: 3px solid darkgoldenrod;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.card:hover .tbl {
+    display: table;
+}
+
+.card:hover {
+    color: darkgoldenrod;
+}
+
+.dropdown {
+    display: inline-block;
+    text-align: center;
+}
+
+.basic {
+    display: inline-block;
+
+}
+.basic li a{
+    font-size:15px;
+
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content li a {
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 3px;
+    text-decoration: none;
+    color: grey;
+}
+
+.dropdown-content a:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+td:first-child{font-weight: bold}
+
+
+
+/*mobiteli*/
+
+@media only screen and (max-width:599px) {
+    #nav {
+        width: 100%;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .basic {
+        display: none;
+    }
+    h3 {
+        padding-top: 0px;
+        font-size: 20px;
+    }
+    h5 {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    ul li {
+        font-size: 10px;
+        display: block;
+        text-align: center;
+    }
+    .content {
+        max-width: 100px;
+        margin: auto;
+    }
+    .section {
+        margin: auto;
+    }
+    .card {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .tbl {
+        width: 91%;
+    }
+}
+
+
+/*tableti & desktopi*/
+
+@media only screen and (min-width:600px) {
+    #nav {
+        width: 100%;
+    }
+    .content {
+        width: 40%;
+    }
+    .section {
+        margin-left: 25px;
+    }
+}
+/*veliki desktopi*/
+@media only screen and (min-width:1200px) {
+    #nav {
+        width: 100%;
+        
+    }
+    ul li a{font-size:40px;
+        padding:20px 20px;}
+    #container{width:80%;}
+    .content {
+        min-width: 100%;
+    }
+    .section {
+        margin-left: 25px;
+    }
+    .card{width:20%}
+}
+#footer{
+    font-size:30px;
+    padding:30px 0px;}
+/*međugranica*/
+@media only screen and (min-width:600px) {
+    #nav {
+        width: 100%;
+    }
+    .content {
+        width: 40%;
+    }
+    .section {
+        margin-left: 25px;
+    }
+}
